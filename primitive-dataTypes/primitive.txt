@@ -1,4 +1,5 @@
 primitive
+it is immutable,single values hold,
 
 1.string - '' ,""
 2.number -  677,89

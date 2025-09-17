@@ -1,0 +1,5 @@
+ non premitive (refrence type)
+multple values hold
+it is mutable
+eg:array and objects
+array is an orederd collection of values,array is a data structure used to store multiple values in a single value
