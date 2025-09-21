@@ -1,0 +1,1 @@
+loops are used to run same block of code multiple time
