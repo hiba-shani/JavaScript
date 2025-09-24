@@ -1,0 +1,16 @@
+arrow functions are a shorter syntax for creating function in js,introduced in ES6(ecma scrip[t])
+
+ex:
+regular function
+
+function add (a,b){
+    return a + b
+}
+add(1,2)
+
+2. arrow function
+
+
+const add = (a,b)  =>  a + b
+add(1,2)
+

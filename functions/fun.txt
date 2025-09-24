@@ -1,0 +1,17 @@
+functions are blocks of code designed to perform a particular task.
+
+function declaration
+function expression
+arrow function
+call back function
+anonymous function
+IIFE function     immediatly invoked function expression
+
+
+
+
+prdefined functions(build in function--->predefined functions are functions that are already provided by javascript)
+
+string function
+date function
+math function
