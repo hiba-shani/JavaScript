@@ -1,0 +1,11 @@
+bild in functions or negative methods
+it already provided by js
+
+features
+1.time saving
+2.increase code readability
+3.optimised and re-available
+
+string methods or functions
+math functions
+date functions
