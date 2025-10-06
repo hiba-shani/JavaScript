@@ -1,0 +1,1 @@
+destructuring assignment is a js future that allows you to unpack values from arrays for properties from objects into seperate vriables.
