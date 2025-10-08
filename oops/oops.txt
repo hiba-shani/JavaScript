@@ -1,0 +1,9 @@
+oops(object oriented programming language)-
+
+class -grouping
+
+object-an instance of a class
+encapsulation-  bundling data and methods thet operate only data within one unit.
+inheritence- one class can inherit properties and method for (by using extend keyword)
+polymorphism-the ability to use methods in different ways.
+abstraction - hiding complex implementation details and providing necessory details only
