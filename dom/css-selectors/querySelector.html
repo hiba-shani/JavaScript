@@ -1,0 +1,25 @@
+<!-- return the first match -->
+ <!--query srlrctor, this methods are used to find and intract with html elements on the webpoage.they allow you to dynamically select the elements using css selector and manipulate them with js. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">box 1</div>
+    <div class="box">box 2</div>
+    <div class="box">box 3</div>
+
+    <script>
+        const firstBox = document.querySelector('.box');
+        console.log(firstBox.textContent);
+
+    </script>
+</body>
+
+</html>
