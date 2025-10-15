@@ -1,0 +1,12 @@
+
+an action occuring a webpage loading
+mose hovering
+form submitting
+webpage load
+button clicking
+
+events listener is a function in js thats wait for an event occure and than executes code in responds.to dynamically add or remove behaviour during run time
+event handling means writting js code that will run when a specific event occure.
+
+
+add event listener-you can attach multiple handlers to the same event.you can remove listners later to if needed.cleaner
