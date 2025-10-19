@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box"> enter your mouse</div>
+    <script>
+        document.getElementById("box").addEventListener("mouseenter", function () {
+            box.style.background = "lightgreen";
+            box.textContent = "mouse entered";
+            console.log("mouse enterd the box");
+
+        })
+    </script>
+</body>
+
+</html>
