@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="xt" id="input"  placeholder="type something....">
+        <button type="submit">Submitt</button>
+        <button type="reset" id="resetbtn">Reset</button>
+    </form>
+    <p id="output"></p>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const output = document.getElementById("output");
+        const input = document.getElementById("input");
+        const resetbtn = document.getElementById('resetbtn');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            output.innerText = `form submitted!!`;
+        })
+        resetbtn.addEventListener('reset', () =>{
+            input.value ="";
+            output.innerText ="";
+        })
+    </script>
+</body>
+</html>

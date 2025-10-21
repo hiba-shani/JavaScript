@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="input" placeholder="type something....">
+    </form>
+    <p id="output"></p>
+
+    <script>
+        const input = document.getElementById('input');
+        const output = document.getElementById("output");
+
+        input.addEventListener('select', () => {
+            output.innerText= "you selected";
+        });
+    </script>
+</body>
+
+</html>
