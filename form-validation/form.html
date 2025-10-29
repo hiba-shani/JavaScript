@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 300px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Regisration form</h2>
+    <form onsubmit="return validateForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <span class="error" id="errorname"></span><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="emailerror"></span><br>
+
+        <label for="number">Phone Number</label>
+        <input type="text" id="Phone" name="phone">
+        <span class="error" id="phoneerror"></span><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script>
+        function validateForm() {
+
+
+            document.getElementById("errorname").innerText="";
+            document.getElementById("emailerror").innerText="";
+            document.getElementById("phoneerror").innerText ="";
+
+
+            
+            let isvalid = true;
+
+            // name validation
+
+            const name = document.getElementById("name").value.trim();
+            if (name === "") {
+                document.getElementById("errorname").innerText = "name is required";
+                isvalid = false;
+            }
+
+            // email validation
+
+            const email = document.getElementById("email").value.trim();
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById("emailerror").innerText = "inavalid email format";
+                isvalid = false;
+            }
+
+            // phone validation
+
+            const phone = document.getElementById("Phone").value.trim();
+            const phonePattern = /^\d{10}$/;
+            if (!phone.test(phone)) {
+                document.getElementById("phoneerror").innerText = " Phone number must 10 digits";
+                isvalid = false;
+            }
+
+            return isvalid;
+        }
+    </script>
+</body>
+
+</html>

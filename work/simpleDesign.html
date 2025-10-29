@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="status"></div>
+    <div id="content">
+
+        <h1>Welcome to the home page</h1>
+        <p>This is your main page content</p>
+    </div>
+
+    <script>
+        const statusDiv = document.getElementById("status");
+        const contentDiv = document.getElementById("content");
+
+        function showStatus(message, classname, duration = 0) {
+            statusDiv.textContent = message;
+            statusDiv.className = classname;
+            statusDiv.style.display = 'block';
+
+            if (duration > 0) {
+                setTimeout(() => {
+                    statusDiv.style.display = "none";
+                }, duration);
+            }
+        }
+
+        function updateOnline() {
+            if (navigator.onLine) {
+                showStatus("you are back online", "online", 2000);
+                setTimeout(() => {
+                    contentDiv.style.display = 'block';
+                }, 2000);
+            } else {
+                showStatus("you are  offline", "offline");
+                contentDiv.style.display = 'none'
+            }
+        }
+        window.addEventListener('load', updateOnline);
+        window.addEventListener('online', updateOnline);
+        window.addEventListener('offline', updateOnline);
+    </script>
+</body>
+
+</html>
